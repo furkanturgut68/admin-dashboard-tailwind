@@ -89,7 +89,7 @@
                         </button>
                         <!--Dropdown Menu-->
                         <div id="user-profile-menu"
-                            class=" absolute right-10 mt-14 w-40 bg-white border border-primary-600 rounded-lg shadow-xl">
+                            class="hidden absolute right-10 mt-14 w-40 bg-white border border-primary-600 rounded-lg shadow-xl">
                             <div class="px-4 py-2">
                                 <p class="text-gray-600 border-primary-500 border-b">Deneme 1</p>
                                 <p class="text-gray-600">Mail</p>
@@ -112,6 +112,96 @@
         </div>
     </nav>
     <!--Nav Menu END-->
+
+    <aside class="fixed hidden z-20 h-full top-0 left-0 pt-16 lg:flex flex-shrink-0 flex-col w-72">
+        <div class="bg-primary-900 border-b border-primary-600 relative flex-1 flex-col pt-0">
+            <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+                <div class="flex-1 px-3 bg-primary-900 divide-y space-y-2">
+                    <ul class="space-y-2 pb-2 mt-6">
+                        <li>
+                            <a href="dashboard.html"
+                                class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                                <i class="fa-solid fa-gauge"></i><span class="ml-4">Dashboard</span></a>
+                        </li>
+                        <!--Pages Menu-->
+                        <li>
+                            <a href="#"
+                                class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900 toggle-menu">
+                                <i class="fa-solid fa-file"></i><span class="ml-4">Pages</span>
+                                <i class="fa-solid fa-caret-down ml-auto"></i>
+                            </a>
+                            <ul class="ml-4 submenu hidden">
+                                <li>
+                                    <a href="index.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Sign In</span></a>
+                                    <a href="sign-up.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Sign Up</span></a>
+                                    <a href="forgot-password.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Forgot Password</span></a>
+                                    <a href="reset-password.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Reset Password</span></a>
+                                    <a href="profile-lock.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Profile Lock</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--Pages Menu END-->
+                        <!--E-Commerce-->
+                        <li>
+                            <a href="#"
+                                class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900 toggle-menu">
+                                <i class="fa-solid fa-shop"></i><span class="ml-2">E-Commerce</span>
+                                <i class="fa-solid fa-caret-down ml-auto"></i>
+                            </a>
+                            <ul class="ml-4 submenu hidden">
+                                <li>
+                                    <a href="product.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Product</span></a>
+                                    <a href="billing.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Billing</span></a>
+                                    <a href="invoice.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Invoice</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--E-Commerce END-->
+                        <!--Users-->
+                        <li>
+                            <a href="#"
+                                class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900 toggle-menu">
+                                <i class="fa-solid fa-users"></i><span class="ml-2">Users</span>
+                                <i class="fa-solid fa-caret-down ml-auto"></i>
+                            </a>
+                            <ul class="ml-4 submenu hidden">
+                                <li>
+                                    <a href="user-list.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">User List</span></a>
+                                    <a href="profile.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Profile</span></a>
+                                    <a href="settings.html"
+                                        class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                        <span class="ml-3">Settings</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--E-Commerce END-->
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </aside>
 
     <script src="./js/script.js"></script>
 </body>
