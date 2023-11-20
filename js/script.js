@@ -36,3 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+// Mobile Menu
+let menuBar = document.querySelector("#menuBar");
+let mobileMenu = document.querySelector("#mobileMenu");
+let closeMenu = document.querySelector("#closeMenu");
+
+menuBar.addEventListener('click', () => {
+    mobileMenu.classList.remove("hidden");
+});
+
+closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add("hidden");
+});

@@ -72,47 +72,193 @@
                         <!--Dropdown Menu-->
                         <div id="user-inbox-menu"
                             class="hidden absolute right-20 mt-14 w-40 bg-white border border-primary-600 rounded-lg shadow-xl">
-                            <ul class="py-2">
-                                <li class="text-gray-600 mb-2 p-2 hover:bg-second-900">Lorem ipsum dolor sit amet
-                                    consectetur, adipisicing elit. Nam, non!</li>
-                                <li class="text-gray-600 mb-2 p-2 hover:bg-second-900">Mail</li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <!--User Menu-->
-                    <div class="flex justify-end p-2">
-                        <button class="text-white" id="user-menu-profile-button">
-                            <div class="border border-second-500 rounded-full w-6">
-                                <i class="fa-solid fa-user"></i>
+                            <div class="p-4 border-b border-second-900">
+                                <div class="flex items-center">
+                                    <div class="w-14 h-14 rounded-full mr-2">
+                                        <img src="./adam.jpeg" class="rounded-full">
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-semibold">Furkan Turgut</p>
+                                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Soluta, quas.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </button>
-                        <!--Dropdown Menu-->
-                        <div id="user-profile-menu"
-                            class="hidden absolute right-10 mt-14 w-40 bg-white border border-primary-600 rounded-lg shadow-xl">
-                            <div class="px-4 py-2">
-                                <p class="text-gray-600 border-primary-500 border-b">Deneme 1</p>
-                                <p class="text-gray-600">Mail</p>
-                            </div>
-                            <ul>
-                                <li class="hover:bg-second-900"><a href="#"
-                                        class="block px-4 py-2 text-primary-700 ">Dashboard</a></li>
-                                <li class="hover:bg-second-900"><a href="#"
-                                        class="block px-4 py-2 text-primary-700 ">Settings</a></li>
-                                <li class="hover:bg-second-900 block px-4 py-2">Logout</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--User Menu END-->
 
+                            <div class="p-4 border-b border-second-900">
+                                <div class="flex items-center">
+                                    <div class="w-14 h-14 rounded-full mr-2">
+                                        <img src="./malakli.jpeg" class="rounded-full">
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-semibold">Furkan Turgut</p>
+                                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Soluta, quas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--User Menu-->
+                        <div class="flex justify-end p-2">
+                            <button class="text-white" id="user-menu-profile-button">
+                                <div class="border border-second-500 rounded-full w-6">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                            </button>
+                            <!--Dropdown Menu-->
+                            <div id="user-profile-menu"
+                                class="hidden absolute right-10 mt-14 w-40 bg-white border border-primary-600 rounded-lg shadow-xl">
+                                <div class="px-4 py-2">
+                                    <p class="text-gray-600 border-primary-500 border-b">Deneme 1</p>
+                                    <p class="text-gray-600">Mail</p>
+                                </div>
+                                <ul>
+                                    <li class="hover:bg-second-900"><a href="#"
+                                            class="block px-4 py-2 text-primary-700 ">Dashboard</a></li>
+                                    <li class="hover:bg-second-900"><a href="#"
+                                            class="block px-4 py-2 text-primary-700 ">Settings</a></li>
+                                    <li class="hover:bg-second-900 block px-4 py-2">Logout</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--User Menu END-->
+
+                    </div>
                 </div>
             </div>
-        </div>
 
         </div>
     </nav>
     <!--Nav Menu END-->
+    <!--Mobile Menu-->
+    <div class="lg:hidden flex fixed z-50 w-full border-t
+        border-second-900 shadow-xl bg-primary-900 py-3 px-6 bottom-0 justify-around items-start">
+        <a href="#" class="relative text-center block text-second-900">
+            <div class="text-2xl" id="menuBar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </a>
+
+        <a href="#" class="relative text-center block text-second-900">
+            <div class="text-2xl" id="menuBar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </a>
+    </div>
+    <!--Mobile Menu END-->
+
+    <div class="fixed left-0 top-0 w-full h-full z-50 bg-primary-900 bg-opacity-30 shadow hidden" id="mobileMenu">
+        <div class="absolute left-0 top-0 w-72 h-full z-50 bg-primary-900 text-white shadow-md">
+            <div class="text-gray-50 text-lg absolute right-3 top-3 cursor-pointer" id="closeMenu">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="ml-2 mt-12">
+                <ul class="space-y-2 pb-2 mt-6">
+                    <li>
+                        <a href="dashboard.html"
+                            class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                            <i class="fa-solid fa-gauge"></i><span class="ml-4">Dashboard</span></a>
+                    </li>
+                    <!--Pages Menu-->
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900 toggle-menu">
+                            <i class="fa-solid fa-lock"></i><span class="ml-4">Authentication</span>
+                            <i class="fa-solid fa-caret-down ml-auto"></i>
+                        </a>
+                        <ul class="ml-4 submenu hidden">
+                            <li>
+                                <a href="index.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Sign In</span></a>
+                                <a href="sign-up.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Sign Up</span></a>
+                                <a href="forgot-password.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Forgot Password</span></a>
+                                <a href="reset-password.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Reset Password</span></a>
+                                <a href="profile-lock.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Profile Lock</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Pages Menu END-->
+                    <!--E-Commerce-->
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900 toggle-menu">
+                            <i class="fa-solid fa-shop"></i><span class="ml-2">E-Commerce</span>
+                            <i class="fa-solid fa-caret-down ml-auto"></i>
+                        </a>
+                        <ul class="ml-4 submenu hidden">
+                            <li>
+                                <a href="product.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Product</span></a>
+                                <a href="billing.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Billing</span></a>
+                                <a href="invoice.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--E-Commerce END-->
+                    <!--Users-->
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900 toggle-menu">
+                            <i class="fa-solid fa-users"></i><span class="ml-2">Users</span>
+                            <i class="fa-solid fa-caret-down ml-auto"></i>
+                        </a>
+                        <ul class="ml-4 submenu hidden">
+                            <li>
+                                <a href="user-list.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">User List</span></a>
+                                <a href="profile.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Profile</span></a>
+                                <a href="settings.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  ml-3 pt-2 hover:text-second-900 toggle-menu">
+                                    <span class="ml-3">Settings</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--E-Commerce END-->
+                    <li>
+                        <a href="404.html"
+                            class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                            <i class="fa-solid fa-bomb"></i><span class="ml-4">404</span></a>
+                    </li>
+                    <li>
+                        <a href="500.html"
+                            class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                            <i class="fa-solid fa-bug"></i><span class="ml-4">500</span></a>
+                    </li>
+                    <li>
+                        <a href="maintenance.html"
+                            class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                            <i class="fa-solid fa-triangle-exclamation"></i></i><span
+                                class="ml-4">Maintenance</span></a>
+                    </li>
+                    <li>
+                        <a href="help.html"
+                            class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                            <i class="fa-solid fa-triangle-exclamation"></i><span class="ml-4">Help</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="flex">
         <main class="flex lg:ml-60 xl:ml-44 2xl:ml-60 mt-16 lg:mt-16 w-full p-6">
@@ -191,7 +337,9 @@
                         </div>
                     </div>
                 </div>
+                <!--Customer & Sales Last Week END-->
 
+                <!--Shipping & Table-->
                 <div class="container mx-auto  p-0 ml-2">
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         <div class="bg-primary-900 rounded-lg mt-5  shadow-md p-4">
@@ -271,8 +419,9 @@
                                             <th class="px-6 py-3 whitespace-nowrap text-white text-sm">Developer</th>
                                             <th class="px-6 py-3 whitespace-nowrap text-white text-sm">Active</th>
                                             <th class="px-6 py-3 whitespace-nowrap text-white text-sm">
-                                                <button class="text-primary-900 border bg-border-900 hover:bg-transparent hover:text-second-900 bg-second-900 px-3 py-2 rounded-xl "> <i
-                                                        class="fa-solid fa-pen-to-square"></i>Edit Users</button>
+                                                <button
+                                                    class="text-primary-900 border bg-border-900 hover:bg-transparent hover:text-second-900 bg-second-900 px-3 py-2 rounded-xl ">
+                                                    <i class="fa-solid fa-pen-to-square"></i>Edit Users</button>
                                             </th>
 
                                         </tr>
@@ -282,6 +431,37 @@
                         </div>
                     </div>
                 </div>
+                <!--Shipping & Table END-->
+
+                <!--Footer-->
+                <div class="container  mt-2 ml-2 mb-6 mx-auto">
+                    <div class="lg:flex lg:justify-between text-center  bg-primary-900 rounded-lg">
+                        <div class="lg:text-left lg:p-4">
+                            <ul class="lg:flex lg:space-x-4">
+                                <li><a href="#" class="text-white hover:text-second-900">Terms and Conditions</a></li>
+                                <li><a href="#" class="text-white hover:text-second-900">Licences</a></li>
+                                <li><a href="#" class="text-white hover:text-second-900">Private Policy</a></li>
+                                <li><a href="#" class="text-white hover:text-second-900">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="lg:text-right  p-4">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="text-second-900 hover:text-second-600 transition"><i
+                                        class="fa-brands fa-youtube fa-xl"></i></a>
+                                <a href="https://github.com/furkanturgut68" target="_blank"
+                                    class="text-second-900 hover:text-second-600"><i
+                                        class="fa-brands fa-github fa-xl"></i></a>
+                                <a href="https://www.linkedin.com/in/devfurkan/" target="_blank"
+                                    class="text-second-900 hover:text-second-600"><i
+                                        class="fa-brands fa-linkedin fa-xl"></i></a>
+                                <a href="#" class="text-second-900 hover:text-second-600 transition"><i
+                                        class="fa-brands fa-instagram fa-xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Footer END-->
+
             </div>
         </main>
 
@@ -298,9 +478,9 @@
                             </li>
                             <!--Pages Menu-->
                             <li>
-                                <a href="#"
+                                <a href="javascript:void(0)"
                                     class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900 toggle-menu">
-                                    <i class="fa-solid fa-file"></i><span class="ml-4">Pages</span>
+                                    <i class="fa-solid fa-lock"></i><span class="ml-4">Authentication</span>
                                     <i class="fa-solid fa-caret-down ml-auto"></i>
                                 </a>
                                 <ul class="ml-4 submenu hidden">
@@ -326,7 +506,7 @@
                             <!--Pages Menu END-->
                             <!--E-Commerce-->
                             <li>
-                                <a href="#"
+                                <a href="javascript:void(0)"
                                     class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900 toggle-menu">
                                     <i class="fa-solid fa-shop"></i><span class="ml-2">E-Commerce</span>
                                     <i class="fa-solid fa-caret-down ml-auto"></i>
@@ -348,7 +528,7 @@
                             <!--E-Commerce END-->
                             <!--Users-->
                             <li>
-                                <a href="#"
+                                <a href="javascript:void(0)"
                                     class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900 toggle-menu">
                                     <i class="fa-solid fa-users"></i><span class="ml-2">Users</span>
                                     <i class="fa-solid fa-caret-down ml-auto"></i>
@@ -368,6 +548,27 @@
                                 </ul>
                             </li>
                             <!--E-Commerce END-->
+                            <li>
+                                <a href="404.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                                    <i class="fa-solid fa-bomb"></i><span class="ml-4">404</span></a>
+                            </li>
+                            <li>
+                                <a href="500.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                                    <i class="fa-solid fa-bug"></i><span class="ml-4">500</span></a>
+                            </li>
+                            <li>
+                                <a href="maintenance.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                                    <i class="fa-solid fa-triangle-exclamation"></i></i><span
+                                        class="ml-4">Maintenance</span></a>
+                            </li>
+                            <li>
+                                <a href="help.html"
+                                    class="text-white items-center flex roundend-lg text-base font-poppins hover:bg-primary-800 px-1 py-2  hover:text-second-900">
+                                    <i class="fa-solid fa-triangle-exclamation"></i><span class="ml-4">Help</span></a>
+                            </li>
 
                         </ul>
                     </div>
