@@ -25,11 +25,13 @@
                         <img src="./logo.png" class="h-8">
                     </a>
                     <form action="#" class="hidden lg:block lg:pl-6">
-                        <div class="absolute inset-y-0 mt-6 ml-3 ">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <input type="text" placeholder="Search..." class="bg-gray-50 border border-gray-300 text-primary-900 sm:text-sm rounded-xl
+                        <div class="relative">
+                            <div class="absolute inset-y-0 mt-2 ml-3 ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <input type="text" placeholder="Search..." class="bg-gray-50 border border-gray-300 text-primary-900 sm:text-sm rounded-xl
                     focus:ring-second-900 focus:border-second-900 block xl:w-[36rem] pl-10 p-2">
+                        </div>
                     </form>
                 </div>
                 <!--Notification & Profile-->
@@ -39,17 +41,70 @@
                         <span class="text-base font-normal text-white mr-5 ml-5">Open Source ❤</span>
                     </div>
 
-                    <div class="flex items-center">
-                        <i class="fa-solid fa-bell text-white mr-2 ml-2"></i>
+
+                    <!--Notification Dropdown-->
+                    <div class="flex justify-end p-2">
+                        <button class="text-white" id="user-menu-bell-button">
+                            <div class="">
+                                <i class="fa-solid fa-bell text-white mr-2 ml-2"></i>
+                            </div>
+                        </button>
+                        <!--Dropdown Menu-->
+                        <div id="user-bell-menu"
+                            class="hidden absolute right-30 mt-14 w-40 bg-white border border-primary-600 rounded-lg shadow-xl">
+                            <ul class="py-2">
+                                <li class="text-gray-600 mb-2 p-2 hover:bg-second-900">Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit. Nam, non!</li>
+                            </ul>
+
+                        </div>
                     </div>
 
-                    <div class="flex items-center">
-                        <i class="fa-solid fa-inbox text-white mr-2 ml-2"></i>
+
+                    <!--Inbox Dropdown-->
+                    <div class="flex justify-end p-2">
+                        <button class="text-white" id="user-menu-inbox-button">
+                            <div class="">
+                                <i class="fa-solid fa-inbox text-white mr-2 ml-2"></i>
+                            </div>
+                        </button>
+                        <!--Dropdown Menu-->
+                        <div id="user-inbox-menu"
+                            class="hidden absolute right-20 mt-14 w-40 bg-white border border-primary-600 rounded-lg shadow-xl">
+                            <ul class="py-2">
+                                <li class="text-gray-600 mb-2 p-2 hover:bg-second-900">Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit. Nam, non!</li>
+                                <li class="text-gray-600 mb-2 p-2 hover:bg-second-900">Mail</li>
+                            </ul>
+
+                        </div>
                     </div>
 
-                    <div class="flex justify-end p-4">
-                        <button class="text-white">Profile</button>
+                    <!--User Menu-->
+                    <div class="flex justify-end p-2">
+                        <button class="text-white" id="user-menu-profile-button">
+                            <div class="border border-second-500 rounded-full w-6">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                        </button>
+                        <!--Dropdown Menu-->
+                        <div id="user-profile-menu"
+                            class=" absolute right-10 mt-14 w-40 bg-white border border-primary-600 rounded-lg shadow-xl">
+                            <div class="px-4 py-2">
+                                <p class="text-gray-600 border-primary-500 border-b">Deneme 1</p>
+                                <p class="text-gray-600">Mail</p>
+                            </div>
+                            <ul>
+                                <li class="hover:bg-second-900"><a href="#"
+                                        class="block px-4 py-2 text-primary-700 ">Dashboard</a></li>
+                                <li class="hover:bg-second-900"><a href="#"
+                                        class="block px-4 py-2 text-primary-700 ">Settings</a></li>
+                                <li class="hover:bg-second-900 block px-4 py-2">Logout</li>
+                            </ul>
+                        </div>
                     </div>
+                    <!--User Menu END-->
+
                 </div>
             </div>
         </div>
@@ -58,7 +113,7 @@
     </nav>
     <!--Nav Menu END-->
 
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
